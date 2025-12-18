@@ -1,0 +1,10 @@
+{
+  "name": "qalis-pest-control",
+  "version": "0.1.0",
+  "description": "Static site for Qalis Pest Control",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx live-server --port=3000"
+  },
+  "license": "MIT"
+}
