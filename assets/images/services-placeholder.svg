@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid meet">
+  <rect width="100%" height="100%" fill="#fffaf5"/>
+  <g transform="translate(40,40)">
+    <rect width="720" height="520" rx="18" fill="#fff3e0" stroke="#ffe6b3" />
+    <text x="360" y="260" font-size="28" font-family="Inter, Arial, sans-serif" fill="#b45309" text-anchor="middle">Services Photo Placeholder</text>
+    <text x="360" y="300" font-size="16" font-family="Inter, Arial, sans-serif" fill="#7a4a08" text-anchor="middle">Replace with professional image</text>
+  </g>
+</svg>

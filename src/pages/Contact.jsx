@@ -1,0 +1,72 @@
+import React from 'react'
+import { Container, Heading, Text, Box, Link, SimpleGrid, FormControl, FormLabel, Input, Textarea, Button, Stack, useToast } from '@chakra-ui/react'
+import Breadcrumbs from '../components/Breadcrumbs'
+import OfficeMap from '../components/OfficeMap'
+import Hero from '../components/Hero'
+
+export default function Contact(){
+  const toast = useToast()
+
+  return (
+    <>
+      <Hero image="/assets/images/QualisPestControl/contact-us.webp" title="Contact Us" description="Need help right away? Call or message us for a free quote — we typically respond within a few hours. Emergency call-outs available." kicker="CONTACT" />
+
+      <Box textAlign="center" py={6} bg="white" mt={-6} mb={6} boxShadow="sm" borderRadius="md" px={4}>
+        <Text fontSize="lg" fontWeight={700}>We're ready to help — fast, friendly, and transparent.</Text>
+        <Text mt={2} color="gray.700">Call us at <Link href="tel:0785082383" color="brand.500" fontWeight={600}>078 508 2383</Link> or message us on <Link href="https://wa.me/27785082383" color="brand.500" fontWeight={600}>WhatsApp</Link>. We provide free, no‑obligation on‑site assessments, clear treatment plans, and honest, up‑front pricing. We often schedule same‑day visits when available.</Text>
+      </Box>
+    <Container maxW="1100px">
+      <Breadcrumbs />
+
+      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6} mt={6}>
+        <Box as="form" p={4} bg="white" borderRadius="md" boxShadow="sm" onSubmit={(e)=>{e.preventDefault(); toast({ title: 'Message sent', description: 'We will reply as soon as possible.', status: 'success', duration: 4000, isClosable: true }); e.target.reset() }}>
+          <Box mb={4} p={4} bg="brand.500" color="white" borderRadius="md" border="1px solid" borderColor="brand.600">
+            <Text fontWeight={700}>Need immediate help? We’ll come to you.</Text>
+            <Text mt={1} color="whiteAlpha.900">Call <Link href="tel:0785082383" color="whiteAlpha.900" fontWeight={600}>078 508 2383</Link> or <Link href="https://wa.me/27785082383" color="whiteAlpha.900" fontWeight={600}>message us on WhatsApp</Link> — our team provides free, no‑obligation on‑site assessments, clear treatment plans, and honest, up‑front pricing. Fast response and flexible appointments.</Text>
+          </Box>
+          <Stack spacing={3}>
+            <FormControl isRequired>
+              <FormLabel>Name</FormLabel>
+              <Input name="name" placeholder="Full name" />
+            </FormControl>
+            <FormControl isRequired>
+              <FormLabel>Email</FormLabel>
+              <Input type="email" name="email" placeholder="you@example.com" />
+            </FormControl>
+            <FormControl>
+              <FormLabel>Phone</FormLabel>
+              <Input name="phone" placeholder="078 508 2383" />
+            </FormControl>
+            <FormControl isRequired>
+              <FormLabel>Message</FormLabel>
+              <Textarea name="message" placeholder="How can we help you?" rows={6} />
+            </FormControl>
+            <Button type="submit" colorScheme="brand">Send Message</Button>
+          </Stack>
+        </Box>
+
+        <Box p={4} bg="white" borderRadius="md" boxShadow="sm">
+          <Heading size="sm">Gauteng Office</Heading>
+          <Text mt={2}>9191 Trailand Crescent, Cosmo City, Randburg, 2188</Text>
+          <Text mt={2}>Phone: <Link color="brand.500" href="tel:0785082383">078 508 2383</Link></Text>
+          <Text>Email: <Link color="brand.500" href="mailto:Pestcontrol@gmail.com">Pestcontrol@gmail.com</Link></Text>
+          <Box mt={4} borderRadius="md" overflow="hidden" border="1px solid" borderColor="gray.100">
+            <OfficeMap address="9191 Trailand Crescent, Cosmo City, Randburg, 2188" height={250} />
+          </Box>
+        </Box>
+
+        <Box p={4} bg="white" borderRadius="md" boxShadow="sm">
+          <Heading size="sm">Free State Office</Heading>
+          <Text mt={2}>2151 Section K, Botshabelo, 9781</Text>
+          <Text mt={2}>Phone: <Link color="brand.500" href="tel:0785082383">078 508 2383</Link></Text>
+          <Text>Email: <Link color="brand.500" href="mailto:Pestcontrol@gmail.com">Pestcontrol@gmail.com</Link></Text>
+        </Box>
+      </SimpleGrid>
+
+      <Box mt={6} textAlign="center">
+        <Text fontWeight={700}>Call us now: <Link color="brand.500" href="tel:0785082383">078 508 2383</Link></Text>
+      </Box>
+    </Container>
+    </>
+  )
+}
