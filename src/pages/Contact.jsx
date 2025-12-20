@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Container, Heading, Text, Box, Link, SimpleGrid, FormControl, FormLabel, Input, Textarea, Button, Stack, useToast } from '@chakra-ui/react'
 import Breadcrumbs from '../components/Breadcrumbs'
 import OfficeMap from '../components/OfficeMap'
@@ -6,6 +6,38 @@ import Hero from '../components/Hero'
 
 export default function Contact(){
   const toast = useToast()
+  const [isLoading, setIsLoading] = useState(false)
+  const [result, setResult] = useState(null)
+  const ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_KEY || '42b978bf-0c86-4fda-b857-9c6c1e383486'
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setIsLoading(true)
+    const formData = new FormData(e.target)
+    formData.append('access_key', ACCESS_KEY)
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      })
+      const data = await res.json()
+
+      if (data.success) {
+        toast({ title: 'Message sent', description: 'We will reply as soon as possible.', status: 'success', duration: 4000, isClosable: true })
+        e.target.reset()
+        setResult('success')
+      } else {
+        toast({ title: 'Could not send message', description: data.message || 'Please try again later.', status: 'error', duration: 6000, isClosable: true })
+        setResult('error')
+      }
+    } catch (err) {
+      toast({ title: 'Error', description: 'Unable to send message. Please try again later.', status: 'error', duration: 6000, isClosable: true })
+      setResult('error')
+    } finally {
+      setIsLoading(false)
+    }
+  }
 
   return (
     <>
@@ -19,7 +51,8 @@ export default function Contact(){
       <Breadcrumbs />
 
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6} mt={6}>
-        <Box as="form" p={4} bg="white" borderRadius="md" boxShadow="sm" onSubmit={(e)=>{e.preventDefault(); toast({ title: 'Message sent', description: 'We will reply as soon as possible.', status: 'success', duration: 4000, isClosable: true }); e.target.reset() }}>
+        <Box as="form" p={4} bg="white" borderRadius="md" boxShadow="sm" onSubmit={handleSubmit}>
+          <input type="hidden" name="subject" value="New message from website" />
           <Box mb={4} p={4} bg="brand.500" color="white" borderRadius="md" border="1px solid" borderColor="brand.600">
             <Text fontWeight={700}>Need immediate help? We’ll come to you.</Text>
             <Text mt={1} color="whiteAlpha.900">Call <Link href="tel:0785082383" color="whiteAlpha.900" fontWeight={600}>078 508 2383</Link> or <Link href="https://wa.me/27785082383" color="whiteAlpha.900" fontWeight={600}>message us on WhatsApp</Link> — our team provides free, no‑obligation on‑site assessments, clear treatment plans, and honest, up‑front pricing. Fast response and flexible appointments.</Text>
@@ -41,7 +74,9 @@ export default function Contact(){
               <FormLabel>Message</FormLabel>
               <Textarea name="message" placeholder="How can we help you?" rows={6} />
             </FormControl>
-            <Button type="submit" colorScheme="brand">Send Message</Button>
+            <Button type="submit" colorScheme="brand" isLoading={isLoading}>Send Message</Button>
+            {result === 'success' && <Text color="green.600" fontWeight={600}>Thanks — we will reply as soon as possible.</Text>}
+            {result === 'error' && <Text color="red.600" fontWeight={600}>Something went wrong. Please try again later.</Text>}
           </Stack>
         </Box>
 
