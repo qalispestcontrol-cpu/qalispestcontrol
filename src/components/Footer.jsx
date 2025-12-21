@@ -66,7 +66,7 @@ export default function Footer(){
         <Box mt={8} borderTop="1px solid" borderColor="rgba(255,255,255,0.06)" pt={6}>
           <Stack direction={{ base: 'column', md: 'row' }} justify="space-between" align="center">
             <Text fontSize="sm">© Qalis Pest Control (Pty) Ltd — All rights reserved.</Text>
-            <Text fontSize="sm">Designed & Maintained with care · Phone: <Link href="tel:0785082383" _hover={{ color: 'brand.500' }} transition="color .15s">078 508 2383</Link></Text>
+            <Text fontSize="sm">Designed & Maintained with care · Phone: <Link href="tel:0752421770" _hover={{ color: 'brand.500' }} transition="color .15s">078 508 2383</Link></Text>
           </Stack>
         </Box>
       </Container>
