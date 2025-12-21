@@ -3,8 +3,11 @@ import { Container, Heading, Text, Box, Link, SimpleGrid, FormControl, FormLabel
 import Breadcrumbs from '../components/Breadcrumbs'
 import OfficeMap from '../components/OfficeMap'
 import Hero from '../components/Hero'
+import SEO from '../components/SEO'
 
 export default function Contact(){
+  const pageTitle = 'Contact'
+  const pageDescription = 'Contact Qalis Pest Control in Cosmo City for fast, professional pest control services. Call 078 508 2383 or message on WhatsApp for urgent assistance and free quotes.'
   const toast = useToast()
   const [isLoading, setIsLoading] = useState(false)
   const [result, setResult] = useState(null)
@@ -49,8 +52,7 @@ export default function Contact(){
   }
 
   return (
-    <>
-      <Hero image="/assets/images/webp-images/contact-us.webp" title="Contact Us" description="Need help right away? Call or message us for a free quote — we typically respond within a few hours. Emergency call-outs available." kicker="CONTACT" />
+    <>      <SEO title={pageTitle} description={pageDescription} image="/assets/Logo.jpeg" />      <Hero image="/assets/images/webp-images/contact-us.webp" title="Contact Us" description="Need help right away? Call or message us for a free quote — we typically respond within a few hours. Emergency call-outs available." kicker="CONTACT" />
 
       <Box textAlign="center" py={6} bg="white" mt={-6} mb={6} boxShadow="sm" borderRadius="md" px={4}>
         <Text fontSize="lg" fontWeight={700}>We're ready to help — fast, friendly, and transparent.</Text>

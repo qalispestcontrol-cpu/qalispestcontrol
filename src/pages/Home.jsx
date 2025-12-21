@@ -5,6 +5,7 @@ import Hero from '../components/Hero'
 import ServiceCard from '../components/ServiceCard'
 import ClientCard from '../components/ClientCard'
 import Breadcrumbs from '../components/Breadcrumbs'
+import SEO from '../components/SEO'
 
 export default function Home(){
   const services = [
@@ -21,6 +22,7 @@ export default function Home(){
 
   return (
     <>
+      <SEO title="Pest Control Cosmo City" description="Qalis Pest Control — Trusted pest control in Cosmo City. Soil poisoning, termite treatment, general pest control (cockroaches, fleas, ticks, bees) and rodent management. Call 078 508 2383." image="/assets/Logo.jpeg" />
       <Hero />
 
       <Container maxW="1100px">

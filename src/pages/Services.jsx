@@ -2,8 +2,11 @@ import React from 'react'
 import { Container, Heading, SimpleGrid, Box, Text } from '@chakra-ui/react'
 import ServiceCard from '../components/ServiceCard'
 import Breadcrumbs from '../components/Breadcrumbs' 
+import SEO from '../components/SEO'
 
 export default function Services(){
+  const pageTitle = 'Services'
+  const pageDescription = 'Comprehensive pest control services in Cosmo City and Randburg including soil poisoning, termite treatment, general pest control, rodent control and more.'
   const services = [
     { img: '/assets/images/webp-images/image-10.webp', title: 'Soil Poisoning & Termite Protection', desc: 'Professional soil poisoning and termite baiting services — pre-construction and remedial treatments to protect foundations and structures with monitoring and reporting.' },
     { img: '/assets/images/webp-images/image-4.webp', title: 'General Pest Control', desc: 'Targeted treatments for household and commercial pests — cockroaches, ants, fleas, ticks, bedbugs, bees and flies. We perform a full inspection, recommend an integrated treatment plan and provide follow-up visits to ensure long-term control and peace of mind.' },
@@ -17,6 +20,7 @@ export default function Services(){
 
   return (
     <Container maxW="1100px">
+      <SEO title={pageTitle} description={pageDescription} image="/assets/Logo.jpeg" />
       <Breadcrumbs />
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={8} alignItems="center">
         <Box>
