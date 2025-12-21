@@ -3,7 +3,7 @@ import { Box, Heading, Text, Button, Stack, Container } from '@chakra-ui/react'
 import { Link as RouterLink } from 'react-router-dom'
 
 export default function Hero({ image, kicker, title, description, primaryCta = { to: '/contact', label: 'Get a Free Quote' }, secondaryCta = { to: '/services', label: 'Our Services' } }){
-  const bg = image ?? '/assets/images/QualisPestControl/image-4.jpeg'
+  const bg = image ?? '/assets/images/webp-images/image-4.webp'
   return (
     <Box as="section" className="hero" position="relative" width="100vw" left="50%" transform="translateX(-50%)" mt={-10} minH={{ base: '60vh', md: '72vh' }} bgImage={`url('${bg}')`} bgSize="cover" bgPos="center" bgRepeat="no-repeat" display="flex" alignItems="center" borderRadius={0} overflow="hidden">
       {/* dark overlay for contrast */}

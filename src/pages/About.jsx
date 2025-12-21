@@ -31,7 +31,7 @@ export default function About(){
         </Box>
 
         <Box>
-          <Image src="/assets/images/QualisPestControl/image-2.jpeg" alt="Team at work" borderRadius="md" boxShadow="md" objectFit="cover" width="100%" maxH={{ base: '160px', md: '280px' }} loading="lazy" />
+          <Image src="/assets/images/webp-images/image-2.webp" alt="Team at work" borderRadius="md" boxShadow="md" objectFit="cover" width="100%" maxH={{ base: '160px', md: '280px' }} loading="lazy" />
         </Box>
       </SimpleGrid>
 
@@ -50,7 +50,7 @@ export default function About(){
         </Box>
 
         <Box>
-          <Image src="/assets/images/QualisPestControl/image-3.jpeg" alt="Inspection" borderRadius="md" boxShadow="md" objectFit="cover" width="100%" maxH={{ base: '160px', md: '280px' }} loading="lazy" />
+          <Image src="/assets/images/webp-images/image-3.webp" alt="Inspection" borderRadius="md" boxShadow="md" objectFit="cover" width="100%" maxH={{ base: '160px', md: '280px' }} loading="lazy" />
         </Box>
       </SimpleGrid>
 

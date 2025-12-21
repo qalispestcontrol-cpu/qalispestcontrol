@@ -8,9 +8,9 @@ import Breadcrumbs from '../components/Breadcrumbs'
 
 export default function Home(){
   const services = [
-    { img: '/assets/images/QualisPestControl/image-1.jpeg', title: 'General Pest Control', desc: 'Targeted treatments for household and commercial pests — ants, cockroaches, fleas, bedbugs and flies. We perform a full inspection, recommend an integrated treatment plan and provide follow-up visits to ensure long-term control and peace of mind.' },
-    { img: '/assets/images/QualisPestControl/image-2.jpeg', title: 'Rodent Control', desc: 'Comprehensive rodent management including inspection, humane removal, baiting, trapping and proofing to prevent re-infestation. We also advise on sanitation and structural improvements to keep rodents out and protect your property.' },
-    { img: '/assets/images/QualisPestControl/image-3.jpeg', title: 'Termite Inspection & Treatment', desc: 'Expert termite inspections and treatments, from soil poisoning and termiticide applications to baiting systems and pre-construction protection. We provide remedial work, reporting and ongoing monitoring to safeguard structures from costly damage.' },
+    { img: '/assets/images/webp-images/image-1.webp', title: 'General Pest Control', desc: 'Targeted treatments for household and commercial pests — ants, cockroaches, fleas, bedbugs and flies. We perform a full inspection, recommend an integrated treatment plan and provide follow-up visits to ensure long-term control and peace of mind.' },
+    { img: '/assets/images/webp-images/image-2.webp', title: 'Rodent Control', desc: 'Comprehensive rodent management including inspection, humane removal, baiting, trapping and proofing to prevent re-infestation. We also advise on sanitation and structural improvements to keep rodents out and protect your property.' },
+    { img: '/assets/images/webp-images/image-3.webp', title: 'Termite Inspection & Treatment', desc: 'Expert termite inspections and treatments, from soil poisoning and termiticide applications to baiting systems and pre-construction protection. We provide remedial work, reporting and ongoing monitoring to safeguard structures from costly damage.' },
   ]
 
   const clients = [
@@ -26,7 +26,7 @@ export default function Home(){
       <Container maxW="1100px">
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={8} alignItems="center" my={8}>
           <Box>
-            <Image src="/assets/images/QualisPestControl/image-8.png" alt="Owner with certificate" borderRadius="md" boxShadow="md" objectFit="cover" width="100%" maxH={{ base: '160px', md: '280px' }} loading="lazy" />
+            <Image src="/assets/images/webp-images/image-8.webp" alt="Owner with certificate" borderRadius="md" boxShadow="md" objectFit="cover" width="100%" maxH={{ base: '160px', md: '280px' }} loading="lazy" />
           </Box>
 
           <Box>
@@ -37,7 +37,7 @@ export default function Home(){
 
             <Stack direction={{ base: 'column', sm: 'row' }} spacing={3} mt={4}>
               <Button as={RouterLink} to="/contact" colorScheme="brand">Contact Us</Button>
-              <Button as="a" href="/assets/images/QualisPestControl/image-8.png" target="_blank" rel="noopener noreferrer" variant="ghost">View Certificate</Button>
+              <Button as="a" href="/assets/images/webp-images/image-8.webp" target="_blank" rel="noopener noreferrer" variant="ghost">View Certificate</Button>
             </Stack>
           </Box>
         </SimpleGrid>
