@@ -8,7 +8,7 @@ export default function Contact(){
   const toast = useToast()
   const [isLoading, setIsLoading] = useState(false)
   const [result, setResult] = useState(null)
-  const ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_KEY || '42b978bf-0c86-4fda-b857-9c6c1e383486'
+  const ACCESS_KEY = '42b978bf-0c86-4fda-b857-9c6c1e383486'
 
   const handleSubmit = async (e) => {
     e.preventDefault()
