@@ -34,6 +34,12 @@ Design & Notes ✅
 - **Structured data:** Added LocalBusiness JSON-LD to `index.html` (update the URLs, opening hours, and `sameAs` links to reflect production values).
 - **Next steps:** Replace placeholder imagery, add a favicon and Open Graph images, run Lighthouse/axe accessibility tests, and consider a sticky quick-call button for mobile.
 
+## Vercel deployment & environment variables 🔧
+
+- Set the Web3Forms key as a Vite environment variable in Vercel's Project Settings: `VITE_WEB3FORMS_KEY` (this is required for the contact form to submit). Do not commit your `.env` file — the real key should only be stored in Vercel or a local `.env` file.
+- Enable automatic deployments on every GitHub push by connecting the repository in Vercel and ensuring **Automatic Deploys** are turned on for the production branch (default behavior when linked).
+- If you prefer to rotate the key, generate a new key in Web3Forms and replace the `VITE_WEB3FORMS_KEY` value in Vercel; then push a new commit to trigger a redeploy.
+
 License
 
 This project is available under the MIT License. See `LICENSE`.

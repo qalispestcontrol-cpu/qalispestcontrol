@@ -8,12 +8,21 @@ export default function Contact(){
   const toast = useToast()
   const [isLoading, setIsLoading] = useState(false)
   const [result, setResult] = useState(null)
-  const ACCESS_KEY = '42b978bf-0c86-4fda-b857-9c6c1e383486'
+  const ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_KEY ?? import.meta.env.VITE_ACCESS_KEY ?? null
+  if (!ACCESS_KEY) {
+    // Vite env variable should be set: VITE_WEB3FORMS_KEY
+    console.warn('Missing VITE_WEB3FORMS_KEY; contact form will not submit.')
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     setIsLoading(true)
     const formData = new FormData(e.target)
+    if (!ACCESS_KEY) {
+      toast({ title: 'Contact form unavailable', description: 'Missing VITE_WEB3FORMS_KEY; message will not be sent. Please contact the site administrator.', status: 'error', duration: 6000, isClosable: true })
+      setIsLoading(false)
+      return
+    }
     formData.append('access_key', ACCESS_KEY)
 
     try {
