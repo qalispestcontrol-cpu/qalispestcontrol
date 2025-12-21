@@ -18,7 +18,7 @@ export default function Header(){
     <Box as="header" bg="#000000" borderBottomWidth={1} borderColor="rgba(255,255,255,0.06)" position="sticky" top={0} zIndex="sticky" backdropFilter="saturate(120%) blur(6px)">
       <Flex className="container" maxW="1100px" mx="auto" align="center" justify="space-between" h="64px" px={0}>
         <Link as={RouterLink} to="/" _hover={{ textDecoration: 'none' }} display="flex" alignItems="center" height="100%">
-          <Image src="/assets/Logo.jpeg" alt="Qalis Pest Control" height="100%" objectFit="contain" />
+          <Image src="/assets/logo.webp" alt="Qalis Pest Control" height="100%" objectFit="contain" />
         </Link>
 
         {/* Desktop nav */}
@@ -59,7 +59,7 @@ export default function Header(){
           <DrawerCloseButton color="white" />
           <DrawerBody>
             <VStack spacing={6} align="stretch" mt={8}>
-              <Link as={RouterLink} to="/" onClick={onClose} display="flex" alignItems="stretch" height="64px"><Image src="/assets/Logo.jpeg" alt="Qalis Pest Control" height="100%" objectFit="contain" /></Link>
+              <Link as={RouterLink} to="/" onClick={onClose} display="flex" alignItems="stretch" height="64px"><Image src="/assets/logo.webp" alt="Qalis Pest Control" height="100%" objectFit="contain" /></Link>
               {navLinks.map((l) => (
                 <Button as={RouterLink} to={l.to} key={l.to} variant="ghost" justifyContent="flex-start" onClick={onClose} color="white" _hover={{ color: 'brand.500', bg: 'rgba(217,119,6,0.06)' }} transition="all .15s">{l.label}</Button>
               ))}

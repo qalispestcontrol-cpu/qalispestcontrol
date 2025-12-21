@@ -6,7 +6,7 @@ export default function SEO({ title, description, image, keywords }){
   const siteTitle = 'Qalis Pest Control'
   const defaultDesc = 'Qalis Pest Control — Trusted pest control in Cosmo City and Randburg. We provide soil poisoning, termite treatment, rodent control, cockroach treatment, flea and tick control. Call 078 508 2383.'
   const location = useLocation()
-  const origin = typeof window !== 'undefined' ? window.location.origin : ''
+  const origin = typeof window !== 'undefined' ? (import.meta.env.VITE_SITE_URL ?? window.location.origin) : ''
   const url = `${origin}${location.pathname}`
 
   return (
@@ -22,13 +22,13 @@ export default function SEO({ title, description, image, keywords }){
       <meta property="og:description" content={description ?? defaultDesc} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={url} />
-      <meta property="og:image" content={image ?? '/assets/Logo.jpeg'} />
+      <meta property="og:image" content={image ?? '/assets/logo.webp'} />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title ? `${title} — ${siteTitle}` : siteTitle} />
       <meta name="twitter:description" content={description ?? defaultDesc} />
-      <meta name="twitter:image" content={image ?? '/assets/Logo.jpeg'} />
+      <meta name="twitter:image" content={image ?? '/assets/logo.webp'} />
     </Helmet>
   )
 }

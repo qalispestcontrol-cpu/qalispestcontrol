@@ -8,6 +8,7 @@ import SEO from '../components/SEO'
 export default function About(){
   const pageTitle = 'About Us'
   const pageDescription = 'About Qalis Pest Control — licensed pest control services in Cosmo City and Randburg. Our team provides professional inspections, termite treatments, soil poisoning and ongoing maintenance.'
+  const pageImage = '/assets/logo.webp' 
   const clients = [
     { name: 'Wonder Park — Mug anf Beans', contactPerson: 'Tisetso / Johanna', phone: '012 004 0180', altPhone: '064 620 1941', services: 'Rats & Mouse, Cockroaches, Flies', since: '01 Nov, 2024', work: 'Monthly maintenance and targeted baiting to protect food prep areas; routine hygiene checks and follow-ups.' },
     { name: 'Tsekane / Debonairs', contactPerson: 'Yone', phone: '012 004 0180', altPhone: '078 188 2339', services: 'Rats & Mouse, Cockroaches', since: '02 Jan, 2025', work: 'Rodent proofing, trap deployment and small structural repairs to remove entry points.' },
@@ -17,7 +18,7 @@ export default function About(){
 
   return (
     <>
-      <SEO title={pageTitle} description={pageDescription} image="/assets/Logo.jpeg" />
+      <SEO title={pageTitle} description={pageDescription} image={pageImage} />
       <Hero />
       <Container maxW="1100px">
       <Breadcrumbs />

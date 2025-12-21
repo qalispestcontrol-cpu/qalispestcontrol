@@ -6,7 +6,7 @@ import SEO from '../components/SEO'
 export default function Quote(){
   const pageTitle = 'Get a Quote'
   const pageDescription = 'Request a free quote from Qalis Pest Control — we service Cosmo City and surrounding areas. Provide your details and we will get back with a tailored estimate.'
-  const toast = useToast()
+  const pageImage = '/assets/logo.webp'   const toast = useToast()
   const [loading, setLoading] = useState(false)
   const [form, setForm] = useState({ name: '', email: '', phone: '', service: '', address: '', date: '', message: '' })
 
@@ -31,7 +31,7 @@ export default function Quote(){
 
   return (
     <Container maxW="780px">
-      <SEO title={pageTitle} description={pageDescription} image="/assets/Logo.jpeg" />
+      <SEO title={pageTitle} description={pageDescription} image={pageImage} />
       <Breadcrumbs />
       <Box bgGradient="linear(to-r, brand.50, brand.100)" p={{ base: 6, md: 8 }} borderRadius="md" textAlign="center" mb={6}>
         <Heading>Get a Free Quote</Heading>

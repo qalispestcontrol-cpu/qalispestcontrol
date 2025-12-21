@@ -52,7 +52,7 @@ export default function Contact(){
   }
 
   return (
-    <>      <SEO title={pageTitle} description={pageDescription} image="/assets/Logo.jpeg" />      <Hero image="/assets/images/webp-images/contact-us.webp" title="Contact Us" description="Need help right away? Call or message us for a free quote — we typically respond within a few hours. Emergency call-outs available." kicker="CONTACT" />
+    <>      <SEO title={pageTitle} description={pageDescription} image="/assets/logo.webp" />      <Hero image="/assets/images/webp-images/contact-us.webp" title="Contact Us" description="Need help right away? Call or message us for a free quote — we typically respond within a few hours. Emergency call-outs available." kicker="CONTACT" />
 
       <Box textAlign="center" py={6} bg="white" mt={-6} mb={6} boxShadow="sm" borderRadius="md" px={4}>
         <Text fontSize="lg" fontWeight={700}>We're ready to help — fast, friendly, and transparent.</Text>
