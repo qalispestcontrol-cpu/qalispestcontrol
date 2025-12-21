@@ -22,7 +22,7 @@ export default function Home(){
 
   return (
     <>
-      <SEO title="Pest Control Cosmo City" description="Qalis Pest Control — Trusted pest control in Cosmo City. Soil poisoning, termite treatment, general pest control (cockroaches, fleas, ticks, bees) and rodent management. Call 078 508 2383." image="/assets/logo.webp" />
+      <SEO title="Pest Control Cosmo City" description="Qalis Pest Control — Trusted pest control in Cosmo City. Soil poisoning, termite treatment, general pest control (cockroaches, fleas, ticks, bees) and rodent management. Call 078 508 2382." image="/assets/logo.webp" />
       <Hero />
 
       <Container maxW="1100px">

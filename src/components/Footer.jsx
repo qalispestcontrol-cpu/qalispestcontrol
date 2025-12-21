@@ -38,7 +38,7 @@ export default function Footer(){
           <Box>
             <Heading size="sm" mb={3}>Contact</Heading>
             <Stack spacing={2}>
-              <Text><strong>Phone:</strong> <Link href="tel:0785082383" _hover={{ color: 'brand.500' }} transition="color .15s">078 508 2383</Link></Text>
+              <Text><strong>Phone:</strong> <Link href="tel:0785082383" _hover={{ color: 'brand.500' }} transition="color .15s">078 508 2382</Link></Text>
               <Text><strong>Email:</strong> <Link href="mailto:qalis.pestcontrol@gmail.com" _hover={{ color: 'brand.500' }} transition="color .15s">Pestcontrol@gmail.com</Link></Text>
               <Text><strong>WhatsApp:</strong> <Link href="https://wa.me/27785082382?text=Hello%20Qalis%20Pest%20Control" target="_blank" rel="noopener" _hover={{ color: 'brand.500' }} transition="color .15s">Start Chat</Link></Text>
             </Stack>
@@ -66,7 +66,7 @@ export default function Footer(){
         <Box mt={8} borderTop="1px solid" borderColor="rgba(255,255,255,0.06)" pt={6}>
           <Stack direction={{ base: 'column', md: 'row' }} justify="space-between" align="center">
             <Text fontSize="sm">© Qalis Pest Control (Pty) Ltd — All rights reserved.</Text>
-            <Text fontSize="sm">Designed & Maintained with care · Phone: <Link href="tel:0752421770" _hover={{ color: 'brand.500' }} transition="color .15s">078 508 2383</Link></Text>
+            <Text fontSize="sm">Designed & Maintained with care · Phone: <Link href="tel:0752421770" _hover={{ color: 'brand.500' }} transition="color .15s">078 508 2382</Link></Text>
           </Stack>
         </Box>
       </Container>

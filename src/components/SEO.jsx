@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom'
 
 export default function SEO({ title, description, image, keywords }){
   const siteTitle = 'Qalis Pest Control'
-  const defaultDesc = 'Qalis Pest Control — Trusted pest control in Cosmo City and Randburg. We provide soil poisoning, termite treatment, rodent control, cockroach treatment, flea and tick control. Call 078 508 2383.'
+  const defaultDesc = 'Qalis Pest Control — Trusted pest control in Cosmo City and Randburg. We provide soil poisoning, termite treatment, rodent control, cockroach treatment, flea and tick control. Call 078 508 2382.'
   const location = useLocation()
   const origin = typeof window !== 'undefined' ? (import.meta.env.VITE_SITE_URL ?? window.location.origin) : ''
   const url = `${origin}${location.pathname}`

@@ -51,7 +51,7 @@ export default function WhatsApp(){
               <Button onClick={() => {
                 // quick call option
                 window.location.href = 'tel:0785082383'
-              }} bg="#25D366" color="white" leftIcon={<PhoneIcon />} _hover={{ bg: '#1da851', color: 'white' }} _focus={{ boxShadow: '0 0 0 6px rgba(37,211,102,0.12)' }} transition="all .12s">Or call us: 078 508 2383</Button>
+              }} bg="#25D366" color="white" leftIcon={<PhoneIcon />} _hover={{ bg: '#1da851', color: 'white' }} _focus={{ boxShadow: '0 0 0 6px rgba(37,211,102,0.12)' }} transition="all .12s">Or call us: 078 508 2382</Button>
             </VStack>
           </DrawerBody>
         </DrawerContent>

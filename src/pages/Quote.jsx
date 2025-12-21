@@ -53,7 +53,7 @@ export default function Quote(){
 
           <FormControl isRequired>
             <FormLabel>Phone</FormLabel>
-            <Input name="phone" value={form.phone} onChange={update} placeholder="078 508 2383" />
+            <Input name="phone" value={form.phone} onChange={update} placeholder="078 508 2382" />
           </FormControl>
 
           <FormControl isRequired>
