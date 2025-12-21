@@ -56,7 +56,7 @@ export default function Contact(){
 
       <Box textAlign="center" py={6} bg="white" mt={-6} mb={6} boxShadow="sm" borderRadius="md" px={4}>
         <Text fontSize="lg" fontWeight={700}>We're ready to help — fast, friendly, and transparent.</Text>
-        <Text mt={2} color="gray.700">Call us at <Link href="tel:0785082383" color="brand.500" fontWeight={600}>078 508 2383</Link> or message us on <Link href="https://wa.me/27785082383" color="brand.500" fontWeight={600}>WhatsApp</Link>. We provide free, no‑obligation on‑site assessments, clear treatment plans, and honest, up‑front pricing. We often schedule same‑day visits when available.</Text>
+        <Text mt={2} color="gray.700">Call us at <Link href="tel:0785082383" color="brand.500" fontWeight={600}>078 508 2383</Link> or message us on <Link href="https://wa.me/27785082382" color="brand.500" fontWeight={600}>WhatsApp</Link>. We provide free, no‑obligation on‑site assessments, clear treatment plans, and honest, up‑front pricing. We often schedule same‑day visits when available.</Text>
       </Box>
     <Container maxW="1100px">
       <Breadcrumbs />
@@ -66,7 +66,7 @@ export default function Contact(){
           <input type="hidden" name="subject" value="New message from website" />
           <Box mb={4} p={4} bg="brand.500" color="white" borderRadius="md" border="1px solid" borderColor="brand.600">
             <Text fontWeight={700}>Need immediate help? We’ll come to you.</Text>
-            <Text mt={1} color="whiteAlpha.900">Call <Link href="tel:0785082383" color="whiteAlpha.900" fontWeight={600}>078 508 2383</Link> or <Link href="https://wa.me/27785082383" color="whiteAlpha.900" fontWeight={600}>message us on WhatsApp</Link> — our team provides free, no‑obligation on‑site assessments, clear treatment plans, and honest, up‑front pricing. Fast response and flexible appointments.</Text>
+            <Text mt={1} color="whiteAlpha.900">Call <Link href="tel:0785082383" color="whiteAlpha.900" fontWeight={600}>078 508 2383</Link> or <Link href="https://wa.me/27785082382" color="whiteAlpha.900" fontWeight={600}>message us on WhatsApp</Link> — our team provides free, no‑obligation on‑site assessments, clear treatment plans, and honest, up‑front pricing. Fast response and flexible appointments.</Text>
           </Box>
           <Stack spacing={3}>
             <FormControl isRequired>

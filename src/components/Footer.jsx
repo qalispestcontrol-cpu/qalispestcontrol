@@ -20,7 +20,7 @@ export default function Footer(){
             <Heading size="sm" mb={3}>Qalis Pest Control</Heading>
             <Text mb={3} color="gray.300">Reliable solutions for unwanted visitors — safe, effective, and environmentally conscious pest control across residential and commercial sectors.</Text>
             <HStack spacing={3}>
-              <Button as="a" href="https://wa.me/27785082383?text=Hello%20Qalis%20Pest%20Control" target="_blank" rel="noopener" colorScheme="green" leftIcon={<Icon as={WhatsAppSvg}/>}>WhatsApp</Button>
+              <Button as="a" href="https://wa.me/27785082382?text=Hello%20Qalis%20Pest%20Control" target="_blank" rel="noopener" colorScheme="green" leftIcon={<Icon as={WhatsAppSvg}/>}>WhatsApp</Button>
               <Button as="a" href="tel:0785082383" variant="ghost" color="white" leftIcon={<Icon as={PhoneSvg}/>} _hover={{ bg: 'brand.500', color: 'white' }} _focus={{ boxShadow: '0 0 0 6px rgba(217,119,6,0.12)' }} transition="all .12s">Call</Button>
             </HStack>
           </Box>
@@ -40,7 +40,7 @@ export default function Footer(){
             <Stack spacing={2}>
               <Text><strong>Phone:</strong> <Link href="tel:0785082383" _hover={{ color: 'brand.500' }} transition="color .15s">078 508 2383</Link></Text>
               <Text><strong>Email:</strong> <Link href="mailto:qalis.pestcontrol@gmail.com" _hover={{ color: 'brand.500' }} transition="color .15s">Pestcontrol@gmail.com</Link></Text>
-              <Text><strong>WhatsApp:</strong> <Link href="https://wa.me/27785082383?text=Hello%20Qalis%20Pest%20Control" target="_blank" rel="noopener" _hover={{ color: 'brand.500' }} transition="color .15s">Start Chat</Link></Text>
+              <Text><strong>WhatsApp:</strong> <Link href="https://wa.me/27785082382?text=Hello%20Qalis%20Pest%20Control" target="_blank" rel="noopener" _hover={{ color: 'brand.500' }} transition="color .15s">Start Chat</Link></Text>
             </Stack>
           </Box>
 

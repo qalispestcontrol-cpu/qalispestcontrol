@@ -6,7 +6,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 export default function WhatsApp(){
   const { isOpen, onOpen, onClose } = useDisclosure()
   const [message, setMessage] = useState("Hi Qalis Pest Control 👋 I'm interested in a quote for pest control. Could you help me?")
-  const phone = '27785082383' // South Africa: remove leading 0 and add country code
+  const phone = '27785082382' // South Africa: remove leading 0 and add country code
 
   function send(){
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
