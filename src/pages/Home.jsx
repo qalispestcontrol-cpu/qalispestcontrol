@@ -8,9 +8,9 @@ import Breadcrumbs from '../components/Breadcrumbs'
 
 export default function Home(){
   const services = [
-    { img: '/assets/images/webp-images/image-1.webp', title: 'General Pest Control', desc: 'Targeted treatments for household and commercial pests — ants, cockroaches, fleas, bedbugs and flies. We perform a full inspection, recommend an integrated treatment plan and provide follow-up visits to ensure long-term control and peace of mind.' },
-    { img: '/assets/images/webp-images/image-2.webp', title: 'Rodent Control', desc: 'Comprehensive rodent management including inspection, humane removal, baiting, trapping and proofing to prevent re-infestation. We also advise on sanitation and structural improvements to keep rodents out and protect your property.' },
-    { img: '/assets/images/webp-images/image-3.webp', title: 'Termite Inspection & Treatment', desc: 'Expert termite inspections and treatments, from soil poisoning and termiticide applications to baiting systems and pre-construction protection. We provide remedial work, reporting and ongoing monitoring to safeguard structures from costly damage.' },
+    { img: '/assets/images/webp-images/image-4.webp', title: 'Soil Poisoning & Termite Protection', desc: 'Professional soil poisoning and termite baiting services — pre-construction and remedial treatments to protect foundations and structures with monitoring and reporting.' },
+    { img: '/assets/images/webp-images/image-1.webp', title: 'General Pest Control', desc: 'Targeted treatments for household and commercial pests — cockroaches, ants, fleas, ticks, bedbugs, bees and flies. Full inspection, integrated treatment plan and follow-up visits to ensure long-term control.' },
+    { img: '/assets/images/webp-images/image-2.webp', title: 'Rodent Control', desc: 'Comprehensive rodent management: inspection, humane removal, baiting, trapping and proofing to prevent re-infestation. Includes sanitation advice and ongoing monitoring.' },
   ]
 
   const clients = [
