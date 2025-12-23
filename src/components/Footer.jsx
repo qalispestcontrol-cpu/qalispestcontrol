@@ -39,7 +39,7 @@ export default function Footer(){
             <Heading size="sm" mb={3}>Contact</Heading>
             <Stack spacing={2}>
               <Text><strong>Phone:</strong> <Link href="tel:0785082383" _hover={{ color: 'brand.500' }} transition="color .15s">078 508 2382</Link></Text>
-              <Text><strong>Email:</strong> <Link href="mailto:qalis.pestcontrol@gmail.com" _hover={{ color: 'brand.500' }} transition="color .15s">Pestcontrol@gmail.com</Link></Text>
+              <Text><strong>Email:</strong> <Link href="mailto:qalis.pestcontrol@gmail.com" _hover={{ color: 'brand.500' }} transition="color .15s">qalis.pestcontrol@gmail.com</Link></Text>
               <Text><strong>WhatsApp:</strong> <Link href="https://wa.me/27785082382?text=Hello%20Qalis%20Pest%20Control" target="_blank" rel="noopener" _hover={{ color: 'brand.500' }} transition="color .15s">Start Chat</Link></Text>
             </Stack>
           </Box>

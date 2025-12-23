@@ -95,7 +95,7 @@ export default function Contact(){
           <Heading size="sm">Gauteng Office</Heading>
           <Text mt={2}>9191 Trailand Crescent, Cosmo City, Randburg, 2188</Text>
           <Text mt={2}>Phone: <Link color="brand.500" href="tel:0785082383">078 508 2382</Link></Text>
-          <Text>Email: <Link color="brand.500" href="mailto:Pestcontrol@gmail.com">Pestcontrol@gmail.com</Link></Text>
+          <Text>Email: <Link color="brand.500" href="mailtoqalis.pestcontrol@gmail.com">qalis.pestcontrol@gmail.com</Link></Text>
           <Box mt={4} borderRadius="md" overflow="hidden" border="1px solid" borderColor="gray.100">
             <OfficeMap address="9191 Trailand Crescent, Cosmo City, Randburg, 2188" height={250} />
           </Box>
@@ -104,8 +104,8 @@ export default function Contact(){
         <Box p={4} bg="white" borderRadius="md" boxShadow="sm">
           <Heading size="sm">Free State Office</Heading>
           <Text mt={2}>2151 Section K, Botshabelo, 9781</Text>
-          <Text mt={2}>Phone: <Link color="brand.500" href="tel:0785082383">078 508 2383</Link></Text>
-          <Text>Email: <Link color="brand.500" href="mailto:Pestcontrol@gmail.com">Pestcontrol@gmail.com</Link></Text>
+          <Text mt={2}>Phone: <Link color="brand.500" href="tel:0785082383">078 508 2382</Link></Text>
+          <Text>Email: <Link color="brand.500" href="mailto:qalis.pestcontrol@gmail.com">qalis.pestcontrol@gmail.com</Link></Text>
         </Box>
       </SimpleGrid>
 
