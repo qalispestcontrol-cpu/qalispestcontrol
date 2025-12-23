@@ -66,7 +66,7 @@ export default function Header(){
 
               <Box pt={4}>
                 <Button as={RouterLink} to="/quote" colorScheme="brand" width="100%" onClick={onClose}>Get a Quote</Button>
-                <Button mt={3} width="100%" onClick={() => window.location.href = 'tel:0785082383'} bg="brand.500" color="white" _hover={{ bg: 'brand.600' }} _focus={{ boxShadow: '0 0 0 6px rgba(217,119,6,0.12)' }} transition="all .12s">Call: 078 508 2382</Button>
+                <Button mt={3} width="100%" onClick={() => window.location.href = 'tel:0785082382'} bg="brand.500" color="white" _hover={{ bg: 'brand.600' }} _focus={{ boxShadow: '0 0 0 6px rgba(217,119,6,0.12)' }} transition="all .12s">Call: 078 508 2382</Button>
               </Box>
             </VStack>
           </DrawerBody>
